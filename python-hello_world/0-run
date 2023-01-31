@@ -1,2 +1,2 @@
 #!/bin/bash/python3
-python"$PYFILE" print("Best School")
+echo "print('C is fun!')" >$PYFILE
