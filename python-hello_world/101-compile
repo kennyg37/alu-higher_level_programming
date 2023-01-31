@@ -1,0 +1,5 @@
+#!/bin/bash
+PYFILE=$1
+OUTPUT_FILE="$PYFILE"c
+python -m py_compile "$PYFILE"
+mv "$PYFILE"c "$OUTPUT_FILE
