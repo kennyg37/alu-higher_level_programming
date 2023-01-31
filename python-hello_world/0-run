@@ -1,2 +1,2 @@
 #!/bin/bash/python3
-echo "print('C is fun')" > "$PYFILE"; python "$PYFILE"
+echo "print('C is fun')"> "$PYFILE"; python "$PYFILE"
