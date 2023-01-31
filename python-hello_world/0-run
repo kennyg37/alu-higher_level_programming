@@ -1,2 +1,2 @@
 #!/bin/bash/python3
-print("C is fun")\n
+python "print('C is fun')"\n
