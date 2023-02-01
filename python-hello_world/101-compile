@@ -1,5 +1,2 @@
-#!/bin/bash
-PYFILE=$1
-OUTPUT_FILE="$PYFILE"c
-python -m py_compile "$PYFILE"
-mv "$PYFILE"c "$OUTPUT_FILE
+#!/bin/python3
+python3 -m compileall -b $PYFILE i
