@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print(*[chr(97 + i) for i in range(26)], sep=''
+for i in range(97,123):
+    print("{}".format(chr(i)), end="")
