@@ -4,4 +4,4 @@ def print_last_digit(number):
         x = number % 10
     else:
         x = ((number * -1) % 10) * -1
-        print("{}".format(number))
+        print("{:2d}".format(number))
