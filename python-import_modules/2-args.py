@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    l = len(sys.argv)
-    if l == 1:
-        print("{} argument.".format(l - 1))
+    kk = len(sys.argv)
+    if kk  == 1:
+        print("{} argument.".format(kk - 1))
     else:
-        print("{} argument:".format(l - 1))
-    for c in range(1, l):
+        print("{} argument:".format(kk - 1))
+    for c in range(1, kk):
         print("{}: {}".format(c, sys.argv(c)))
