@@ -4,6 +4,8 @@ if __name__ == "__main__":
     kk = len(sys.argv)
     if kk == 1:
         print("{} arguments.".format(kk - 1))
+    elif kk == 2:
+        print("{} argument:".format(kk - 1))
     else:
         print("{} arguments:".format(kk - 1))
     for c in range(1, kk):
