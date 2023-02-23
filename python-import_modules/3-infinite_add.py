@@ -6,6 +6,6 @@ if __name__ == "__main__":
     if length == 1:
         add = 0
     else:
-        for c in range(1, lengt):
+        for c in range(1, length):
             add += int(sys.argv[c])
     print(add)
