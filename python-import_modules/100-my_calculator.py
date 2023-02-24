@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __nsme__ =="__main__":
+if __nsme__ == "__main__":
     import calculator_1
     import sys
     length = len(sys.argv)
