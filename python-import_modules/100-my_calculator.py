@@ -9,7 +9,7 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     operator = sys.argv[2]
     b = int(sys.argv[3])
-    result = none
+    result = None
     if operator == '+':
         result = add(a, b)
     elif operator == '-':
