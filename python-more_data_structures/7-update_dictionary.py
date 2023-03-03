@@ -4,3 +4,4 @@ def update_dictionary(a_dictionary, key, value):
         return None
     else:
         a_dictionary[key] = value
+    return a_dictionary
