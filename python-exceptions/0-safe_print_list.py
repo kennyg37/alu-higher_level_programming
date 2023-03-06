@@ -2,9 +2,9 @@
 def safe_print_list(my_list=[], x=0):
     try:
         i = 0
-       while i < x:
-           print(my_list[])
-           i += 1
+        while i < x:
+            print(my_list[])
+            i += 1
     except IndexError:
         pass 
     finally:
