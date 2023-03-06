@@ -3,8 +3,10 @@ def safe_print_integer(value):
     try:
         for x in value:
             print("{:d}".format(x))
+            if not isinstance(x, int):
+                return True
     except IndexError:
-        pass
+        return False
     finally:
         print()
         return x
