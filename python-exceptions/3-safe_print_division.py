@@ -7,4 +7,4 @@ def safe_print_division(a, b):
     else:
         return result
     finally:
-        print("{} / {} = {}".fotmat(a, b, result))
+        print("{} / {} = {}".format(a, b, result))
