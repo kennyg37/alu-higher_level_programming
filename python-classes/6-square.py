@@ -2,7 +2,6 @@
 """ Module is being documented here """
 
 
-
 class Square:
     """ Class documented"""
     def __init__(self, size=0, position=(0, 0)):
