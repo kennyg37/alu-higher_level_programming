@@ -7,7 +7,7 @@ class Square:
     def __init__(self, size=0):
         self.size = size
 
-    @property 
+    @property
     def size(self):
         return self.__size
 
@@ -21,4 +21,4 @@ class Square:
             self.__size = value
 
     def area(self):
-        return self.__size ** 2 
+        return self.__size ** 2
