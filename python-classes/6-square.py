@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Module documented  """
+""" Module is being documented here"""
+
 
 
 class Square:
