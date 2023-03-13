@@ -2,6 +2,8 @@
 """ Module documented
 author is Kenny i guess we already know that
 right?"""
+
+
 class Square:
     """ Class documented
 
