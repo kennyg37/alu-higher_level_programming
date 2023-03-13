@@ -3,6 +3,8 @@
 author is Kenny i guess we already know that
 right?"""
 class Square:
-    """ Class documented """
+    """ Class documented
+
+    """
     def __init__(self, size):
-        self._size = size
+        self._Square_size = size
