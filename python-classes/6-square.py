@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-""" Module is being documented here """
+"""Define a class Square."""
 
 
 class Square:
     """ Class documented"""
 
     def __init__(self, size=0, position=(0, 0)):
+        """ New square"""
         self.size = size
         self.position = position
 
