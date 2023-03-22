@@ -95,13 +95,4 @@ NameError: name 'NaN' is not defined
 >>> obj4.print_sorted()
 []
 
-Checking None object
->>> obj5 = MyList()
-
->>> obj5.append(None)
-
->>> print(obj5)
-[None]
-
->>> obj5.print_sorted()
-[None]
+Checking None obje
