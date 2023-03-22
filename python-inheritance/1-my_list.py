@@ -8,5 +8,6 @@ class Mylist(List):
         self.__myList = myList
 
     def print_sorted(self):
+        """ Method documented"""
         self.__myList = dir(myList)
         return self.__myList
