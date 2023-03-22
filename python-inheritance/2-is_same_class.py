@@ -3,7 +3,7 @@
 
 
 def is_some_class(obj, a_class):
-    """ Method documented """
+    """ Function documented """
 
     if isinstance(obj, a_class):
         return True
