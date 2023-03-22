@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" Module documented """
+""" Module documented 
 
 
+"""
 
 class MyList(List):
     """ Class documented """
