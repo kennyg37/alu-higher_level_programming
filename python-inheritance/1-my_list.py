@@ -2,6 +2,7 @@
 """ Method documented """
 
 
+
 class MyList(List):
     """ Class documented """
     def __init__(self, myList):
