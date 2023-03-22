@@ -4,5 +4,5 @@
 
 def lookup(obj):
     """ Method defined """
-    new_list = list(obj)
-    return new_list
+    att = dir(obj)
+    return att
