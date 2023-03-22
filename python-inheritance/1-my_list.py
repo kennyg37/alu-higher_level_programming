@@ -2,7 +2,7 @@
 """ Module documented"""
 
 
-class Square:
+class MyList(list):
     """ Class documented"""
 
     def __init__(self, size=0):
