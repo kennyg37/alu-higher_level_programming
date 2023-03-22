@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Method documented """
+""" Module documented """
 
 
 
