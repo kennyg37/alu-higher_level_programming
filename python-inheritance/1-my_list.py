@@ -4,6 +4,7 @@
 
 class Mylist(List):
     """ Class documented """
+    
     def __init__(self, myList):
         self.__myList = myList
 
