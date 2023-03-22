@@ -4,5 +4,5 @@
 
 def lookup(obj):
     """ Method defined """
-    def __dir__(self, obj):
-        return self.obj
+    new_list = list(obj)
+    return new_list
