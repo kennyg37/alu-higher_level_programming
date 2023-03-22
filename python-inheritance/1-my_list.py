@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module documented"""
+""" Module = 1-my_list.py"""
 
 
 class MyList(list):
