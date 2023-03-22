@@ -4,7 +4,6 @@
 
 def is_some_class(obj, a_class):
     """ Function documented """
-
     if isinstance(obj, a_class):
         return True
     else:
