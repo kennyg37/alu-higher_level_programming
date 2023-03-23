@@ -1,8 +1,5 @@
-0t.txt module
-====================
-
 Importing the class from the module:
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 Checking for module docstring:
 >>> m = __import__("7-base_geometry").__doc__
@@ -14,24 +11,32 @@ Checking for class docstring:
 >>> len(c) > 1
 True
 
+Checking area method implementation:
+>>> bg = BaseGeometry()
+>>> try:
+...     bg.area()
+... except Exception as e:
+...     print(e)
+area() is not implemented
 
-bg.integer_validator("my_int", 12)
-bg.integer_validator("width", 89)
+Checking integer_validator method implementation with valid integer values:
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("test", 10)
 
-try:
-    bg.integer_validator("name", "John")
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    bg.integer_validator("age", 0)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    bg.integer_validator("distance", -4)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] name must be an integer
-[ValueError] age must be greater than 0
-[ValueError] distance must be greater than 0
+Checking integer_validator method implementation with invalid integer values:
+>>> bg = BaseGeometry()
+>>> try:
+...     bg.integer_validator("test", "string")
+... except Exception as e:
+...     print(e)
+test must be an integer
+>>> try:
+...     bg.integer_validator("test", 0)
+... except Exception as e:
+...     print(e)
+test must be greater than 0
+>>> try:
+...     bg.integer_validator("test", -10)
+... except Exception as e:
+...     print(e)
+test must be greater than 0
