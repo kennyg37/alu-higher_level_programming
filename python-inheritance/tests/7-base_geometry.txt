@@ -9,21 +9,34 @@ Checking for module docstring:
 >>> len(m) > 1
 True
 
+Checking for class docstring:
+>>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+>>> len(c) > 1
+True
 
-bg.integer_validator("my_int", 12)
-bg.integer_validator("width", 89)
+Checking for method docstring
+        >>> f = __import__("7-base_geometry").BaseGeometry.area.__doc__
+        >>> len(f) > 1
+        True
 
-try:
-    bg.integer_validator("name", "John")
+Checking for method docstring
+        >>> f = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+        >>> len(f) > 1
+        True
+
+Checking given test case
+
+
+>>>try:
+       bg.integer_validator("name", "John")
+   except Exception as e:
+       print("[{}] {}".format(e.__class__.__name__, e))
+>>>try:
+       bg.integer_validator("age", 0)
+   except Exception as e:
+       print("[{}] {}".format(e.__class__.__name__, e))
+>>>try:
+       bg.integer_validator("distance", -4)
 except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    bg.integer_validator("age", 0)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    bg.integer_validator("distance", -4)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+       print("[{}] {}".format(e.__class__.__name__, e))
+>>>
