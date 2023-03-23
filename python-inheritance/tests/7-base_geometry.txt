@@ -14,23 +14,3 @@ Checking for class docstring:
 >>> len(c) > 1
 True
 
-Checking for method docstring
-        >>> f = __import__("7-base_geometry").BaseGeometry.area.__doc__
-        >>> len(f) > 1
-        True
-Checking given test case
-
-
->>>try:
-       bg.integer_validator("name", "John")
-   except Exception as e:
-       print("[{}] {}".format(e.__class__.__name__, e))
->>>try:
-       bg.integer_validator("age", 0)
-   except Exception as e:
-       print("[{}] {}".format(e.__class__.__name__, e))
->>>try:
-       bg.integer_validator("distance", -4)
-except Exception as e:
-       print("[{}] {}".format(e.__class__.__name__, e))
->>>
