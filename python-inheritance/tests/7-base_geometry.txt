@@ -40,3 +40,38 @@ test must be greater than 0
 ... except Exception as e:
 ...     print(e)
 test must be greater than 0
+# Test for tuple with one element
+>>> class Rectangle(BaseGeometry):
+...     def __init__(self, dimensions):
+...         self.dimensions = dimensions
+...
+...     def area(self):
+...         return self.dimensions[0] * self.dimensions[1]
+...
+>>> rect = Rectangle((4,))
+Traceback (most recent call last):
+    ...
+TypeError: Dimensions must be a tuple of 2 positive integers
+
+# Test for invalid tuples
+>>> rect = Rectangle((4, 3, 2))
+Traceback (most recent call last):
+    ...
+TypeError: Dimensions must be a tuple of 2 positive integers
+
+# Test for valid tuples
+>>> rect = Rectangle((4, 3))
+>>> rect.area()
+12
+
+# Test for None type
+>>> rect = Rectangle(None)
+Traceback (most recent call last):
+    ...
+TypeError: Dimensions must be a tuple of 2 positive integers
+
+# Test for True type
+>>> rect = Rectangle(True)
+Traceback (most recent call last):
+    ...
+TypeError: Dimensions must be a tuple of 2 positive integers
