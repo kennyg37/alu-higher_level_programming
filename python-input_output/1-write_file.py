@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-""" Module documented """
+""" this module gives out an output to override a certain file
 
+uses with function embedded in write_file
+
+"""
 
 def write_file(filename="", text=""):
-    """ define function 
+    """define function 
     that includes the objects filename and text"""
 
     with open(filename, mode="w", encoding="UTF8") as c:
