@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""this module gives out an output to override a certain file
+"""Defines a file-appending function."""
 
-uses with function embedded in write_file
-
-"""
 
 def write_file(filename="", text=""):
      """Appends a string to the end of a UTF8 text file.
