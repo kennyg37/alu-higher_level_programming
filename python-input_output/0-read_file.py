@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" Module documented"""
+""" define a fuction that reads text files """
 
 
 def read_file(filename=""):
-    """ Method documented"""
-    with open(filename, mode="r", encoding="utf-8") as d:
-        print(d.read(, end=''))
+    """a fuction to read text """
+    with open(filename, 'r', encoding='UTF8') as b:
+        print(b.read(), end='')
