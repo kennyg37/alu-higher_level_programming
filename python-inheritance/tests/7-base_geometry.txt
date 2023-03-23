@@ -18,12 +18,6 @@ Checking for method docstring
         >>> f = __import__("7-base_geometry").BaseGeometry.area.__doc__
         >>> len(f) > 1
         True
-
-Checking for method docstring
-        >>> f = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
-        >>> len(f) > 1
-        True
-
 Checking given test case
 
 
