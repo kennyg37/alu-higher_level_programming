@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+""" JSON reprsentation of object """
 import json
-""" Module documented."""
 
 
 def to_json_string(my_obj):
-    """ method explained"""
+    """ return JSON format """
     return json.dumps(my_obj)
