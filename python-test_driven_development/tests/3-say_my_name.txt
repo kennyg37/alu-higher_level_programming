@@ -1,7 +1,7 @@
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 
->>> say_my_name("umugabo", "Fred ")
+>>> say_my_name("umugabo", "Fred")
 My name is umugabo Fred
 
 Check wrong value for first name
