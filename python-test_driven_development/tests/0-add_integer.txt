@@ -1,0 +1,13 @@
+>>> from add_integer import add_integer
+>>> add_integer(1, 3)
+4
+>>> add_integer([2, 3], TRUE)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'TRUE' is not defined. Did you mean: 'True'?
+>>> add_integer([2, 4], True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/kennyg37/alu-higher_level_programming/python-test_driven_development/add_integer.py", line 4, in add_integer
+    raise TypeError("a must be an integer or b must be an integer")
+TypeError: a must be an integer or b must be an integer
