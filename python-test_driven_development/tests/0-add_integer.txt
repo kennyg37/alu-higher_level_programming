@@ -1,7 +1,7 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(1, 3)
 4
->>> add_integer([2, 3], TRUE)
+>>> add_integer([2, 3], True)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'TRUE' is not defined. Did you mean: 'True'?
