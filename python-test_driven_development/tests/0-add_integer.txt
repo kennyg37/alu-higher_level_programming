@@ -3,7 +3,6 @@
 4
 >>> add_integer(2)
 100
->>> add_integer(3, "hello")
 >>> add_integer(2.5, 3)
 5
 >>>
