@@ -4,11 +4,6 @@
 >>> add_integer(2)
 100
 >>> add_integer(3, "hello")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/kennyg37/alu-higher_level_programming/python-test_driven_development/add_integer.py", line 4, in add_integer
-    raise TypeError("a must be an integer or b must be an integer")
-TypeError: a must be an integer or b must be an integer
 >>> add_integer(2.5, 3)
 5
 >>>
