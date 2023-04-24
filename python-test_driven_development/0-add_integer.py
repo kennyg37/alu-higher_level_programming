@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """ Module documented by Ken Ganza
-This code creates a function that adds two integers and 
+This code creates a function that adds two integers and
 returns an error when one is of the parameters is not an integer
 
 """
+
 
 def add_integer(a, b=98):
     """ This FUnction perfoms the task at hand"""
