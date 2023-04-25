@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# base.py
 """Defines a base model class."""
 import json
 import csv
@@ -107,13 +108,18 @@ class Base:
                     fieldnames = ["id", "width", "height", "x", "y"]
                 else:
                     fieldnames = ["id", "size", "x", "y"]
-                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
 
     @classmethod
     def load_from_file_csv(cls):
-        """ Load from file"""
+        """Return a list of classes instantiated from a CSV file.
+        Reads from `<cls.__name__>.csv`.
+        Returns:
+            If the file does not exist - an empty list.
+            Otherwise - a list of instantiated classes.
+        """
         filename = cls.__name__ + ".csv"
         try:
             with open(filename, "r", newline="") as csvfile:
