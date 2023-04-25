@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# base.py
- # Jeannine <j.uwase1@alustudent.com>
 """Defines a base model class."""
 import json
 import csv
