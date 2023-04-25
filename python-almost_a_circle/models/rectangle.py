@@ -3,7 +3,9 @@
 from models.base import Base
 
 class Rectangle(Base):
+    """ Class documented"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """ Function documented"""
         super().__init__(id)
         self.__width = width
         self.__height = height
