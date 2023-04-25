@@ -2,10 +2,9 @@
 """ Module documented """
 
 
-
 class Base:
     """
-    The `Base` class provides a base class for creating objects with unique identifiers.
+    The `Base` class provides a base class for creating objects
 
     Attributes:
         id (int): A unique identifier for the object.
@@ -18,8 +17,7 @@ class Base:
         Initializes a new instance of the `Base` class.
 
         Args:
-            id (int, optional): An optional unique identifier for the object. If not provided, a new
-                unique identifier is generated automatically.
+            id (int, optional):unique identifier is generated automatically.
 
         Returns:
             None
