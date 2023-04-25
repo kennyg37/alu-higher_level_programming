@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+""" Module documented """
+
+
+
 class Base:
     """
     The `Base` class provides a base class for creating objects with unique identifiers.
