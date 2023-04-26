@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Modules used in this programm are sys and mysqldb"""
 from sys import argv
-import MYSQLdb
+import MySQLdb
 
 if __name__ == "__main__":
     kd = MYSQLdb.connect(
