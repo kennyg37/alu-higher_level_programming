@@ -24,4 +24,3 @@ if __name__ == "__main__":
             print(row[1], end="")
             cont = cont + 1
     print()
-
