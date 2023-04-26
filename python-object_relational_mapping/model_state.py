@@ -1,21 +1,24 @@
 #!/usr/bin/python3
-"""This script defines a City"""
+"""
+class definition of a State and an instance Base
+"""
 
-from model_state import Base, State
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
 
 
-class City(Base):
-    """City class
-    Attributes:
-        __tablename__ (str): The table name of the class
-        id (int): The id of the class
-        name (str): The name of the class
-        state_id (int): The state the city belongs to
+class State(Base):
     """
-
-    __tablename__ = 'cities'
-
-    id = Column(Integer, primary_key=True)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
+    State class:
+    inherits from Base
+    links to the MySQL table states
+    class attribute id that represents a column of an auto-generated,
+    unique integer, cant be null and is a primary key
+    class attribute name that represents a column of a string
+    with maximum 128 characters and cant be null
+    """
+    __tablename__ = 'states'
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     name = Column(String(128), nullable=False)
