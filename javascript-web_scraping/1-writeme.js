@@ -5,6 +5,6 @@ fs.writeFile(input, 'utf8', (error, data) => {
   if (error) {
     console.log(error);
   } else {
-    console.log(input);
+    console.log(data);
   }
 });
