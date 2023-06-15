@@ -5,7 +5,7 @@ const fs = require('fs');
 fs.writeFile(input, newString, 'utf8', (error) => {
   if (error) {
     console.log(error);
-  } else {
-    console.log(newString);
-  }
+  }// else {
+  // console.log(newString);
+  // }
 });
